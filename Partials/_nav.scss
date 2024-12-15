@@ -1,0 +1,177 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & .logo {
+        & h2 {
+            color: $white;
+            font-size: 3.6rem;
+            & span {
+                font-size: 4rem;
+                color: $secondary;
+            }
+        }
+    }
+    .nav-links {
+        color: $body_color;
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+        & a {
+            color: $lighter;
+            font-weight: bold;
+            transition: all .1s ease-in-out;
+            &:hover {
+                border-bottom: .5rem solid $secondary;
+            }
+        }
+        .active {
+            border-bottom: .5rem solid $secondary;
+        }
+        .btn {
+            border: none;
+            font-size: 2rem;
+            color: $white;
+            background: transparent;
+        }
+    }
+    .the-button {
+        display: none;
+        border: none;
+        background: transparent;
+        color: $white;
+        font-size: 3.6rem;
+    }
+    @media (max-width: 1024px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        & .logo {
+            & h2 {
+                color: $white;
+                font-size: 3rem;
+            }
+            & span {
+                font-size: 1.6rem;
+                color: $primary;
+            }
+        }
+        .nav-links {
+            color: $body_color;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            & a{
+                display: none;
+                color: $lighter;
+                font-weight: bold;
+            }
+            .btn {
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                border: none;
+                font-size: 2rem;
+                color: $primary;
+                background: $secondary;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .the-button {
+            display: block;
+            border: none;
+            background: transparent;
+            color: $white;
+            font-size: 3rem;
+        }
+    }
+    @media (max-width: 495px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        & a {
+            & h2 {
+                color: $white;
+                font-size: 3rem;
+            }
+            & span {
+                font-size: 1.6rem;
+                color: $primary;
+            }
+        }
+        .nav-links {
+            color: $body_color;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            & a{
+                display: none;
+                color: $lighter;
+                font-weight: bold;
+            }
+            .btn {
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                border: none;
+                font-size: 2rem;
+                color: $primary;
+                background: $secondary;
+            }
+        }
+        .the-button {
+            display: block;
+            border: none;
+            background: transparent;
+            color: $white;
+            font-size: 3rem;
+        }
+    }
+    @media (max-width: 124px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        & a {
+            & h2 {
+                color: $white;
+                font-size: 3.6rem;
+            }
+            & span {
+                font-size: 1.6rem;
+                color: $primary;
+            }
+        }
+        .nav-links {
+            color: $body_color;
+            display: flex;
+            gap: 4rem;
+            align-items: center;
+            & a{
+                display: none;
+                color: $lighter;
+                font-weight: bold;
+            }
+            .btn {
+                width: 60px;
+                height: 60px;
+                border-radius: 30px;
+                border: none;
+                font-size: 2rem;
+                color: $primary;
+                background: $secondary;
+            }
+        }
+        .the-button {
+            display: block;
+            border: none;
+            background: transparent;
+            color: $white;
+            font-size: 3.6rem;
+        }
+    }
+}

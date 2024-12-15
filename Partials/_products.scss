@@ -1,0 +1,73 @@
+.products {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: $light;
+    border-radius: 1rem;
+    .products-heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & h2 {
+            color: $primary;
+            font-size: 3.6rem;
+        }
+    }
+    .products-container {
+        padding: 1.6rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        .products-item {
+            background: $primary;
+            width: 100%;
+            border-radius: 1rem;
+            transition: all .3s ease-in-out;
+            .product-title {
+                display: flex;
+                justify-content: center;
+                padding: 1.6rem 0rem;
+                & h3 {
+                    font-size: 1rem;
+                    color: $secondary;
+                    border-bottom: .2rem solid $secondary;
+                }
+            }
+            .product-image {
+                width: 100%;
+                height: 300px;
+                margin: 0 auto;
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+            }
+            .product-price {
+                background: $body_color;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                overflow: hidden;
+                padding-bottom: 1.6rem;
+                & p {
+                    color: $lighter;
+                    font-weight: bold;
+                    padding: 1.6rem 0;
+                }
+                & a {
+                    background: $primary;
+                    color: $secondary;
+                }
+            }
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+            }
+            
+        }
+    }
+}
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
